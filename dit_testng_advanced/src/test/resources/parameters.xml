@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <parameter name="URL" value="http://axone-tech.uk/"></parameter>
+
+    <test name="Nopackage" >
+
+        <parameter name="username" value="AxoneUser123"></parameter>
+        <parameter name="password" value="axone@123"></parameter>
+        <parameter name="city" value="London"></parameter>
+        <parameter name="dob" value="12Dec1950"></parameter>
+
+        <classes>
+            <class name="uk.axone.testngadvanced.TestHowParameterizationWorks" />
+        </classes>
+    </test>
+</suite>
